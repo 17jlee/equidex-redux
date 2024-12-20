@@ -73,7 +73,41 @@ struct squareStatView: View {
         }
     }
 }
+struct homeBarView: View {
+    var body: some View {
+        HStack{
+            Image(systemName: "person.circle")
+                .font(.title)
+                .foregroundStyle(.white)
+            Text("Good Morning!\nJimin Lee")
+                .font(.custom("TrebuchetMS-Bold", size: 15))
+                .fontWeight(.bold)
+                .foregroundStyle(.white)
+            Spacer()
+            Image(systemName: "gear.circle")
+                .font(.title)
+                .foregroundStyle(.white)
+        }
+    }
+}
 
 #Preview {
     testView()
 }
+
+//VStack {
+//    Spacer()
+//    Rectangle()
+//        .fill(.white)
+//        .ignoresSafeArea()
+//        .frame(height: 600)
+//        .clipShape(RoundedRectangle(cornerRadius: 15))
+//}
+//VStack {
+//    Spacer()
+//    Rectangle()
+//        .fill(.white)
+//        .ignoresSafeArea()
+//        .frame(height: 175)
+//        
+//}
