@@ -100,25 +100,24 @@ struct ContentView: View {
             .ignoresSafeArea()
             
             if blur {
-                ZStack {
-                    VisualEffectView(effect: UIBlurEffect(style: .light))
-                        .edgesIgnoringSafeArea(.all)
-                    VStack {
-                        Button("Exit") {
+                Button(action: {
+                    blur = false
+                }) {
+                    ZStack {
+                        VisualEffectView(effect: UIBlurEffect(style: .light))
+                            .edgesIgnoringSafeArea(.all)
+                        VStack {
+                            circleModuleView(label: "What is Money?", image: "money")
+                            circleModuleView(label: "Earning Money", image: "money")
+                            circleModuleView(label: "Needs vs Wants", image: "money")
+                            circleModuleView(label: "Importance of Financial Planning", image: "money")
                             
-                            //withAnimation{
-                                blur = false
-                            //}
+                            
                         }
-                        circleModuleView(label: "What is Money?", image: "money")
-                        circleModuleView(label: "Earning Money", image: "money")
-                        circleModuleView(label: "Needs vs Wants", image: "money")
-                        circleModuleView(label: "Importance of Financial Planning", image: "money")
-                        
                         
                     }
-                    
                 }
+                
                 
             }
             
@@ -127,12 +126,6 @@ struct ContentView: View {
             
         }.popover(isPresented: $showingPopover) {
             VStack {
-                Button("Exit") {
-                    
-                    //withAnimation{
-                        showingPopover = false
-                    //}
-                }
                 circleModuleView(label: "What is Money?", image: "money")
                 circleModuleView(label: "Earning Money", image: "money")
                 circleModuleView(label: "Needs vs Wants", image: "money")
