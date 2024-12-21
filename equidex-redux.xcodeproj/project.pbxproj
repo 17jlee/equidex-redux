@@ -16,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		DB1DF9F42D163326008E2753 /* homeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViews.swift; sourceTree = "<group>"; };
+		DB1DF9F62D171771008E2753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DBBF86792D13874800555E0A /* equidex-redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "equidex-redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBF867C2D13874800555E0A /* equidex_reduxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = equidex_reduxApp.swift; sourceTree = "<group>"; };
 		DBBF867E2D13874800555E0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		DBBF867B2D13874800555E0A /* equidex-redux */ = {
 			isa = PBXGroup;
 			children = (
+				DB1DF9F62D171771008E2753 /* Info.plist */,
 				DB1DF9F42D163326008E2753 /* homeViews.swift */,
 				DBBF867C2D13874800555E0A /* equidex_reduxApp.swift */,
 				DBBF867E2D13874800555E0A /* ContentView.swift */,
@@ -279,11 +281,13 @@
 				DEVELOPMENT_TEAM = 7998K88CRA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "equidex-redux/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,11 +312,13 @@
 				DEVELOPMENT_TEAM = 7998K88CRA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "equidex-redux/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

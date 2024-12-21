@@ -1,15 +1,34 @@
 import SwiftUI
 
+struct VisualEffectView: UIViewRepresentable {
+    var effect: UIVisualEffect?
+    func makeUIView(context: UIViewRepresentableContext<Self>) -> UIVisualEffectView { UIVisualEffectView() }
+    func updateUIView(_ uiView: UIVisualEffectView, context: UIViewRepresentableContext<Self>) { uiView.effect = effect }
+}
+
 struct testView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .fill(.white)
+                .fill(.black)
                 .frame(width: .infinity, height: .infinity)
                 .ignoresSafeArea()
-            HStack {
-                circleModuleView(label: "money", image: "money-basics")
+            VStack {
+                gradientView()
+                    .frame(height: 240)
+                    .ignoresSafeArea()
                 Spacer()
+            }
+            VStack {
+                Rectangle()
+                    .fill(.white)
+                    .frame(height: 100)
+                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                    
+                    .padding(.top, 240.0)
+                    .ignoresSafeArea()
+                Spacer()
+
             }
             
         }
@@ -91,9 +110,23 @@ struct homeBarView: View {
     }
 }
 
+struct gradientView: View {
+    var body: some View {
+        Rectangle()
+            .fill(LinearGradient(
+                gradient: .init(colors: [Color("celestial-red"), Color("celestial-blue")]),
+                startPoint: .init(x: 0.00, y: 0),
+                endPoint: .init(x: 1, y: 0.7)
+            ))
+    }
+}
+
 #Preview {
     testView()
 }
+
+
+
 
 //VStack {
 //    Spacer()
