@@ -3,6 +3,7 @@
 An experimental SwiftUI iOS app designed to teach kids (and beginners) the foundations of personal finance in a fun, Duolingo‑inspired way. Learners progress through bite‑sized modules (Money Basics, Saving & Budgeting, Banking, Credit, Taxes, and Investing) while earning coins, tracking streaks/days, and taking quick quizzes.
 
 Educational purpose only — not financial advice.
+![Screenshot](images/screenshot.webp)
 
 ## Features
 * SwiftUI home screen with gradient header and module icons
